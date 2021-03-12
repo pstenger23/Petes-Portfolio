@@ -5,21 +5,73 @@
 }
 :root {
     --background: #84596b;
-    --header: #440d0f;
+    --content: #440d0f;
 }
- .header {
+body {
+    background-color: var(--background);
+    color: whitesmoke;
+}
+.header {
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
      padding: 25px 15px;
+     font-size: 25px;
+     background-color: var(--content);
+     border-radius: 0 0 15px 15px;
+}
+h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 10px;
+    
+}
+nav a {
+    font-size: 20px;
+    padding: 15px;
+    margin-right: 15px;
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: var(--background);
+    border-radius: 15px;
+}
+
+.top-hr {
+    margin-top: 35px;
+    width: 100%;
+    height: 7px;
+    background-color: var(--content);
+    border-radius: 15px;
+    border: none;
+}
+hr {
+    margin-top: 35px;
+    width: 75%;
+    height: 7px;
+    background-color: var(--content);
+    border-radius: 15px;
+    border: none;
  }
- .content {
+.content {
      display: flex;
+     flex-direction: column;
      flex-wrap: wrap;
+     justify-content: space-evenly;
      width: 100%;
- }
-.about h2 {
+     background-color: var(--background);
+}
+h2 {
     text-align: center;
+    margin-top: 50px;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 50px;
+    background-color: var(--content);
 }
 .about {
     display: flex;
@@ -33,21 +85,29 @@
     justify-content: flex-start;
 }
 .info {
+    flex: 1;
     display: flex;
     flex-direction: column;
     padding: 25px;
     margin: 25px;
     width: 30%;
     line-height: 1.5;
-}
-.info {
+    border-radius: 15px;
+    background-color: var(--content);
     text-align: center;
 }
+#info-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .skills {
     padding-top: 15px;
+    text-align: left;
 }
 .skills ul {
     list-style-type: none;
+    justify-content: flex-start;
 }
 .photo {
     margin: 25px;
@@ -56,16 +116,22 @@
 .self-img {
     border-radius: 200px;
 }
+
 .work {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    align-items: start;
+    grid-gap: 50px;
+    margin: 50px;
+    border-radius: 15px;
+    padding: 50px;
+    background-color: var(--content);
 }
-.work div {
-    display: flex;
-    justify-content: space-around;
-}
+
 .work img {
     max-width: 100%;
-    max-block-size: 150px;
+    max-block-size: 175px;
+    border-radius: 15px;
 }
+
+
