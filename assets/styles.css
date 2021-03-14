@@ -15,7 +15,7 @@ html {
 body {
     background-color: var(--background);
     color: var(--font);
-    
+    font-family: 'Source Code Pro', monospace;
 }
 .header {
      display: flex;
@@ -27,6 +27,7 @@ body {
      border-radius: 0 0 15px 15px;
 }
 h1 {
+    font-family: 'Andale Mono', monospace;
     margin: 0;
     text-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
@@ -68,43 +69,51 @@ hr {
 .hr-footer {
     margin-bottom: 25px;
 }
-.content {
-     display: flex;
-     flex-direction: column;
-     flex-wrap: wrap;
-     justify-content: space-evenly;
-     background-color: var(--background);
-}
+
 h2 {
-    text-align: left;
+    text-align: center;
     margin: 40px 50px 15px 15px;
     padding: 15px;
-    width: 20%;
+    min-width: 200px;
+    max-width: 400px;
     border-radius: 15px;
     border: solid 5px var(--nav-footer);
     font-size: 45px;
+    font-family: 'Andale Mono', monospace;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     background-color: var(--content-box);
 }
 .about {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    margin: 25px;
 }
-.about-info {
-    font-size: 20px;
-    margin: 15px;
+.photo {
+    min-width: 100%;
+}
+.about div {
+    flex: 0 0 1 1;
+    margin: 25px; 
+}
+.about h3 {
+    font-size: xx-large;
+}
+.photo {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.self-img {
+    margin: 25px;
+    border-radius: 200px;
+    border: solid 5px var(--nav-footer);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
 .info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
     padding: 25px;
     margin: 25px;
-    width: 30%;
     line-height: 2;
     border-radius: 15px;
     border: solid 5px var(--nav-footer);
@@ -115,13 +124,6 @@ h2 {
 
 .skills {
     padding-top: 40px;
-}
-
-.self-img {
-    margin: 25px;
-    border-radius: 200px;
-    border: solid 5px var(--nav-footer);
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
 
 .work {
@@ -174,6 +176,7 @@ footer {
     margin: 25px 0 0 0;
     padding: 50px;
     background-color: var(--nav-footer);
+    min-width: 100%;
 }
 
 footer h3 {
