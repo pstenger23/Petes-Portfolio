@@ -14,4 +14,5 @@ as well as my overal skills in web development and a section about who I am as a
 
 [deployed URL](https://pstenger23.github.io/Petes-Portfolio/)
 
-![pstenger23 github io_Petes-Portfolio_](https://user-images.githubusercontent.com/78981011/111076629-17530680-84bb-11eb-975d-ede4cf4fad88.png)
+![pstenger23 github io_Petes-Portfolio_](https://user-images.githubusercontent.com/78981011/111081943-b126ad80-84d3-11eb-92c1-2ec1f00aefcd.png)
+
