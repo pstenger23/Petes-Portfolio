@@ -4,24 +4,35 @@
     box-sizing: border-box;
 }
 :root {
-    --background: #84596b;
-    --content: #440d0f;
+    --nav-footer: #3e3e3b;
+    --content-box: #4c586f;
+    --background: #a2aab0;
+    --font: #cbc5c1;
+}
+html {
+    scroll-behavior: smooth;
 }
 body {
     background-color: var(--background);
-    color: whitesmoke;
+    color: var(--font);
+    
 }
 .header {
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
      padding: 25px 15px;
-     font-size: 25px;
-     background-color: var(--content);
+     font-size: 30px;
+     background-color: var(--nav-footer);
      border-radius: 0 0 15px 15px;
 }
 h1 {
     margin: 0;
+    text-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+h1 a {
+    text-decoration: none;
+    color: var(--font);
 }
 
 nav {
@@ -35,43 +46,45 @@ nav a {
     font-size: 20px;
     padding: 15px;
     margin-right: 15px;
-    color: whitesmoke;
     text-decoration: none;
-    background-color: var(--background);
+    color: var(--font);
     border-radius: 15px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
 
-.top-hr {
-    margin-top: 35px;
+nav a:hover {
+    background-color: var(--background);
+    color: var(--nav-footer);
+}
+
+hr {
+    margin-top: 50px;
     width: 100%;
     height: 7px;
-    background-color: var(--content);
-    border-radius: 15px;
-    border: none;
-}
-hr {
-    margin-top: 35px;
-    width: 75%;
-    height: 7px;
-    background-color: var(--content);
+    background-color: var(--nav-footer);
     border-radius: 15px;
     border: none;
  }
+.hr-footer {
+    margin-bottom: 25px;
+}
 .content {
      display: flex;
      flex-direction: column;
      flex-wrap: wrap;
      justify-content: space-evenly;
-     width: 100%;
      background-color: var(--background);
 }
 h2 {
-    text-align: center;
-    margin-top: 50px;
+    text-align: left;
+    margin: 40px 50px 15px 15px;
     padding: 15px;
+    width: 20%;
     border-radius: 15px;
-    font-size: 50px;
-    background-color: var(--content);
+    border: solid 5px var(--nav-footer);
+    font-size: 45px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    background-color: var(--content-box);
 }
 .about {
     display: flex;
@@ -80,9 +93,10 @@ h2 {
     justify-content: space-around;
 }
 .about-info {
+    font-size: 20px;
     margin: 15px;
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 .info {
     flex: 1;
@@ -91,30 +105,23 @@ h2 {
     padding: 25px;
     margin: 25px;
     width: 30%;
-    line-height: 1.5;
+    line-height: 2;
     border-radius: 15px;
-    background-color: var(--content);
-    text-align: center;
-}
-#info-2 {
-    display: flex;
-    flex-wrap: wrap;
+    border: solid 5px var(--nav-footer);
+    background-color: var(--content-box);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    text-align: left;
 }
 
 .skills {
-    padding-top: 15px;
-    text-align: left;
+    padding-top: 40px;
 }
-.skills ul {
-    list-style-type: none;
-    justify-content: flex-start;
-}
-.photo {
-    margin: 25px;
-    width: 30%;
-}
+
 .self-img {
+    margin: 25px;
     border-radius: 200px;
+    border: solid 5px var(--nav-footer);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
 
 .work {
@@ -122,16 +129,70 @@ h2 {
     flex-wrap: wrap;
     align-items: start;
     grid-gap: 50px;
-    margin: 50px;
+    margin: 0 50px 15px 50px;
     border-radius: 15px;
     padding: 50px;
-    background-color: var(--content);
 }
-
+.work div {
+    flex: 1;
+    margin-top: 0px;
+    background-color:var(--content-box);
+    padding: 15px 45px 45px 45px;
+    border-radius: 15px;
+    border: solid 5px var(--nav-footer);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+.work div:hover {
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.75);
+    transform: scale(1.15);
+}
+.work h3 {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.work a {
+    text-decoration: none;
+    color: var(--font);
+    text-align: center;
+}
 .work img {
     max-width: 100%;
     max-block-size: 175px;
     border-radius: 15px;
 }
 
+.run-buddy img {
+    max-width: 100%;
+    max-block-size: 300px;
+    border-radius: 15px;
+}
+
+footer {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    margin: 25px 0 0 0;
+    padding: 50px;
+    background-color: var(--nav-footer);
+}
+
+footer h3 {
+    margin-left: 0;
+    font-size: 45px;
+    text-decoration: underline;
+}
+footer p {
+    padding-top: 15px;
+    margin-right: 0;
+    font-size: 25px;
+}
+footer a {
+    color: var(--font);
+    text-decoration: none;
+}
+footer a:hover {
+    background-color: var(--content-box);
+    padding: 0 10px;
+    border-radius: 15px;
+}
 
