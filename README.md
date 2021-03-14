@@ -11,4 +11,4 @@ Full Stack Web Development Bootcamp. Here you will find; Landing pages for both 
 This site has been build and deployed for the purpose of showing potential new employers my previous work history, 
 as well as my overal skills in web development and a section about who I am as a person and a web developer.
 
-[link](https://pstenger23.github.io/Petes-Portfolio/)
+[deployed URL](https://pstenger23.github.io/Petes-Portfolio/)
