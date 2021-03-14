@@ -1,3 +1,4 @@
+
 # Peter Stenger's Portfolio
 
 ## **Welcome** to my portfolio!
@@ -12,3 +13,5 @@ This site has been build and deployed for the purpose of showing potential new e
 as well as my overal skills in web development and a section about who I am as a person and a web developer.
 
 [deployed URL](https://pstenger23.github.io/Petes-Portfolio/)
+
+![pstenger23 github io_Petes-Portfolio_](https://user-images.githubusercontent.com/78981011/111076629-17530680-84bb-11eb-975d-ede4cf4fad88.png)
